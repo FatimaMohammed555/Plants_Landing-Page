@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        customgreenDark: {
+                            900: '#003931',
+                        },
+                        greenDark: {
+                            600: '#003931',
+                        },
+                        greenLight: {
+                            100: '#d3e9ed',
+                        },
+                        customgreenHoverLink: {
+                            300: '#ced9c4',
+                        },
+                        customBorderCard: {
+                            300: '#d6ddd1',
+                        },
+                        customBgFooter: {
+                            900: '#000A09',
+                        },
+                        customBgFooterForm: {
+                            500: '#001F1B',
+                        },
+                        customBgInpColr: {
+                            500: '#2F534E',
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+
+</head>
+
+<body class="">
+
+
+    <!-- Start Header -->
+    <header class="fixed w-full z-50 top-0 bg-customgreenDark-900 ">
+        <div class="header_wrapper flex items-center justify-between mx-auto w-full md:w-[85%] py-2 pr-3 md:pr-0">
+
+            <div class="">
+                <a href="#">
+                    <img src="Images/logo_4.png" alt="" srcset="" class="w-24">
+                    <!-- <img src="Images/logo_6.png" alt="" srcset="" class="w-24"> -->
+                </a>
+
+            </div>
+
+            <div class="hidden md:flex gap-8 ">
+                <!-- <a href="#" class="text-white hover:text-yellow-600 transition font-medium text-[13px]">
+                    Home
+                </a> -->
+
+                <a href="#" class="relative inline-block text-white  hover:text-yellow-600 transition font-medium text-[14px]
+                          after:absolute after:left-1/2 after:-bottom-1
+                          after:h-[2px] after:w-0 after:bg-customgreenHoverLink-300
+                          after:transition-all after:duration-500
+                          hover:after:left-0 hover:after:w-full">
+                    Home
+                </a>
+                <a href="#" class="relative inline-block text-white  hover:text-yellow-600 transition font-medium text-[14px]
+                          after:absolute after:left-1/2 after:-bottom-1
+                          after:h-[2px] after:w-0 after:bg-customgreenHoverLink-300
+                          after:transition-all after:duration-500
+                          hover:after:left-0 hover:after:w-full">
+                    Services
+                </a>
+
+                <a href="#" class="relative inline-block text-white  hover:text-yellow-600 transition font-medium text-[14px]
+                          after:absolute after:left-1/2 after:-bottom-1
+                          after:h-[2px] after:w-0 after:bg-customgreenHoverLink-300
+                          after:transition-all after:duration-500
+                          hover:after:left-0 hover:after:w-full">
+                    Our Work
+                </a>
+
+                <a href="#" class="relative inline-block text-white  hover:text-yellow-600 transition font-medium text-[14px]
+                          after:absolute after:left-1/2 after:-bottom-1
+                          after:h-[2px] after:w-0 after:bg-customgreenHoverLink-300
+                          after:transition-all after:duration-500
+                          hover:after:left-0 hover:after:w-full">
+                    Our Team
+                </a>
+
+                <a href="#" class="relative inline-block text-white  hover:text-yellow-600 transition font-medium text-[14px]
+                          after:absolute after:left-1/2 after:-bottom-1
+                          after:h-[2px] after:w-0 after:bg-customgreenHoverLink-300
+                          after:transition-all after:duration-500
+                          hover:after:left-0 hover:after:w-full">
+                    Contact Us
+                </a>
+            </div>
+
+            <div>
+                <button type="button" class="radial-in-header border border-gray-200 text-customgreenDark-900 bg-customgreenHoverLink-300 px-4 py-3  
+                    rounded-lg hover:bg-customgreenDark-900 transition-all duration-300 shadow-md hover:shadow-xl font-medium">
+                    Shop Now
+                </button>
+            </div>
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main -->
+    <main class="flex items-center pt-40 bg-customgreenDark-900">
+        <div class="wrapper_main mx-auto w-full md:w-[85%] pb-8">
+            <div class="flex flex-col lg:flex-row items-start gap-12">
+                <div class="flex-1 ml-2 md:ml-0">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight ">
+                        Live Well <span class="text-yellow-600">With Plants</span> For Modern Living
+                    </h1>
+                    <p class="text-lg text-gray-200 py-8">
+                        Our environment, the world in which we live and work,
+                        is a mirror of our attitudes and expectations.
+                    </p>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex items-center gap-2">
+                            <div
+                                class="w-6 h-6 bg-customgreenHoverLink-300 rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-check text-customgreenDark-900 text-xs"></i>
+                            </div>
+                            <span class="text-gray-200">10+ Years Experience</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div
+                                class="w-6 h-6 bg-customgreenHoverLink-300 rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-check text-customgreenDark-900 text-xs"></i>
+                            </div>
+                            <span class="text-gray-200">+500 Clients</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div
+                                class="w-6 h-6 bg-customgreenHoverLink-300 rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-check text-customgreenDark-900 text-xs"></i>
+                            </div>
+                            <span class="text-gray-200">Professional Team</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-md-6 gap-6 my-6">
+                    
+                            <button
+                                type="button"
+                                class="radial-in border border-gray-200 text-white px-4 py-3  
+            rounded-lg hover:bg-customgreenDark-900 transition-all duration-300 shadow-md hover:shadow-xl font-medium">
+                                Explore plants
+                            </button>
+
+                        <button type="button" class="gap-2 text-white px-3 py-3 
+                     transition-all duration-300 font-medium flex items-center">
+                            <i class="fa-solid fa-play border rounded-full text-white text-xs leading-none p-2"></i>
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="flex-1 relative w-full">
+                    <div class="w-full flex justify-center lg:justify-end main_right_side">
+                        <img src="Images/img_11.png" alt="" srcset="" class="w-[300px] h-[400px] lg:w-96 lg:h-[430px]">
+                    </div>
+                    <div class="absolute -bottom-3 -left-0 bg-white p-4 rounded-2xl shadow-2xl">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 bg-customgreenHoverLink-300 rounded-full flex items-center justify-center">
+                                <i class="fas fa-users text-customgreenDark-900 text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Happy Clients</p>
+                                <p class="text-2xl font-bold text-yellow-600">+500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End Main -->
+
+    <!-- Start Services -->
+    <section>
+        <div class="bg-white py-16">
+            <div class="text-center relative contain_text">
+                <h2 class="text-3xl font-bold text-black">Our Integrated Services</h2>
+                <p class="text-lg text-gray-600 py-3">We offer a comprehensive range of digital solutions to grow your
+                    business.</p>
+            </div>
+            <div class="wrapper_services w-[85%] mx-auto grid grid-cols md:grid-cols-3 gap-8 pt-12 min-h-80">
+                <div class="bg-white p-8 mb-4 md:mb-0 rounded-2xl border border-customBorderCard-300 hover:border-yellow-400 
+                        hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group">
+
+                    <div class="w-16 h-16 rounded-xl bg-yellow-100 flex items-center justify-center mb-6">
+                        <!-- <img src="./Images/plant-pot-svgrepo-com (1).svg" alt="" srcset=""> -->
+                        <img src="./Images/ficus.png" alt="" srcset="" class="w-12 h-12">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">
+                        Plant Care Guidance
+
+                    </h3>
+                    <p class="text-md text-gray-600 mb-3 leading-relaxed">
+                        <!-- Beautiful plants, excellent packaging, and such a thoughtful customer experience. I love it! -->
+                        Get expert advice and simple tips to help your indoor and outdoor plants grow healthy and strong.
+
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center text-sm text-customgreenDark-900 transition-all duration-300 ease-in-out hover:translate-x-2">
+                            <img src="Images/leaf_1.png" alt="" srcset="" class="w-7">
+                            <span>Plant Care Tips</span>
+                        </li>
+                        <li class="flex items-center text-sm text-customgreenDark-900 transition-all duration-300 ease-in-out hover:translate-x-2">
+                            <img src="Images/leaf_1.png" alt="" srcset="" class="w-7">
+                            <span>Watering Guidance</span>
+                        </li>
+                        <li class="flex items-center text-sm text-customgreenDark-900 transition-all duration-300 ease-in-out hover:translate-x-2">
+                            <img src="Images/leaf_1.png" alt="" srcset="" class="w-7">
+                            <span>Light Requirements</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 mb-4 md:mb-0 rounded-2xl border border-customBorderCard-300 hover:border-blue-500 
+                        hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group">
+
+                    <div class="w-16 h-16 rounded-xl bg-blue-100 flex items-center justify-center mb-6">
+                        <!-- <img src="./images/plant_card_svgs/home-heart.svg" class="w-10 h-10"> -->
+                        <img src="./images/drop.png" class="w-12 h-12">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">
+                        Plant Health & Protection
+                    </h3>
+                    <p class="text-md text-gray-600 mb-3 leading-relaxed">
+                       We help you identify plant problems and protect your plants from pests, diseases.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                       <li class="flex items-center text-sm text-customgreenDark-900 transition-all duration-300 ease-in-out hover:translate-x-2">
+                            <img src="Images/leaf_1.png" alt="" srcset="" class="w-7">
+                            <span class="">Pest Control Advice</span>
+                        </li>
+                        <li class="flex items-center text-sm text-customgreenDark-900 text-sm transition-all duration-300 ease-in-out hover:translate-x-2">
+                            <img src="Images/leaf_1.png" alt="" srcset="" class="w-7">
+                            <span>Disease Identification</span>
+                        </li>
+                        <li class="flex items-center text-sm text-customgreenDark-900 text-sm transition-all duration-300 ease-in-out hover:translate-x-2">
+                            <img src="Images/leaf_1.png" alt="" srcset="" class="w-7">
+                            <span>Plant Health Checks</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 mb-0 md:mb-0 rounded-2xl border border-customBorderCard-300 hover:border-emerald-400 
+                        hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group">
+
+                    <div class="w-16 h-16 rounded-xl bg-emerald-100 flex items-center justify-center mb-6">
+                        <img src="./images/gardening.png" class="w-12 h-12">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">
+                       Plant Selection & Styling
+                    </h3>
+                    <p class="text-md text-gray-600 mb-3 leading-relaxed">
+                        Find the perfect plants for your space and create a fresh, natural atmosphere that suits your lifestyle.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center text-sm text-customgreenDark-900 text-sm transition-all duration-300 ease-in-out hover:translate-x-2">
+                            <img src="Images/leaf_1.png" alt="" srcset="" class="w-7">
+                            <span>Plant Recommendations</span>
+                        </li>
+                        <li class="flex items-center text-sm text-customgreenDark-900 text-sm transition-all duration-300 ease-in-out hover:translate-x-2">
+                            <img src="Images/leaf_1.png" alt="" srcset="" class="w-7">
+                            <span>Indoor Plant Styling</span>
+                        </li>
+                        <li class="flex items-center text-sm text-customgreenDark-900 text-sm transition-all duration-300 ease-in-out hover:translate-x-2">
+                            <img src="Images/leaf_1.png" alt="" srcset="" class="w-7">
+                            <span>Pots & Accessories</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Services -->
+
+    <!-- Start statistics -->
+    <section
+    class="relative py-20 bg-cover bg-bottom bg-fixed overflow-hidden"
+    style="background-image: url('./Images/overlay_img_3.jpg');background-position: fixed;">
+
+    <!-- Overlay خفيف -->
+    <div class="absolute inset-0 bg-green-950/50"></div>
+
+    <!-- المحتوى -->
+    <div class="relative max-w-7xl mx-auto px-6">
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+
+            <!-- Stat 1 -->
+            <div class="group">
+                <h3 class="text-4xl md:text-5xl text-yellow-600 font-bold transition-all duration-300
+                        ease-in-out group-hover:scale-110">
+                    +500
+                </h3>
+
+                <p class="mt-2 text-lg font-semibold">
+                    Clients Worldwide
+                </p>
+            </div>
+
+            <!-- Stat 2 -->
+            <div class="group">
+                <h3 class="text-4xl md:text-5xl text-yellow-600 font-bold transition-all duration-300
+                           ease-in-out group-hover:scale-110">
+                    +1000
+                </h3>
+
+                <p class="mt-2 text-lg font-semibold">
+                    Projects Completed
+                </p>
+            </div>
+
+            <!-- Stat 3 -->
+            <div class="group">
+                <h3 class="text-4xl md:text-5xl text-yellow-600 font-bold transition-all duration-300
+                           ease-in-out group-hover:scale-110">
+                    +50
+                </h3>
+
+                <p class="mt-2 text-lg font-semibold">
+                    Marketing Experts
+                </p>
+            </div>
+
+            <!-- Stat 4 -->
+            <div class="group">
+                <h3 class="text-4xl md:text-5xl text-yellow-600 font-bold transition-all duration-300
+                           ease-in-out group-hover:scale-110">
+                    +10
+                </h3>
+
+                <p class="mt-2 text-lg font-semibold">
+                    Years of Experience
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    </section>
+    <!-- End statistics -->
+
+    <!-- Start Team -->
+    <section>
+        <div class="bg-gray-50 py-16">
+            <div class="text-center relative contain_text">
+                <h2 class="text-3xl font-bold text-black">Our Creative Team</h2>
+                <p class="text-lg text-gray-600 py-3">An elite group of the best digital marketing experts.</p>
+            </div>
+
+            <div class="wrapper_services w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-12 min-h-80 ">
+
+                <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out hover:-translate-y-2 group">
+                    <div
+                        class="image_item rounded-2xl rounded-b-none bg-gradient-to-br from-blue-400 to-purple-400 h-72 relative">
+                        <img src="Images/img_men_1.jfif" alt="" srcset=""
+                            class="h-72 w-full rounded-2xl rounded-b-none">
+                        <div
+                            class="absolute inset-0 bg-customgreenDark-900/60 flex items-center justify-center gap-4
+                                opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-2xl rounded-b-none">
+                            <a href="#"
+                                class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-greenDark-600 hover:bg-greenLight-100 group/icon">
+                                <i
+                                    class="fa-brands fa-facebook-f transition-transform duration-500 ease-in-out group-hover/icon:rotate-[360deg]"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-greenDark-600 hover:bg-greenLight-100 group/icon">
+                                <i
+                                    class="fa-brands fa-twitter transition-transform duration-500 ease-in-out group-hover/icon:rotate-[360deg]"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-greenDark-600 hover:bg-greenLight-100 group/icon">
+                                <i
+                                    class="fa-brands fa-linkedin-in transition-transform duration-500 ease-in-out group-hover/icon:rotate-[360deg]"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold transition-all duration-500 group-hover:tracking-widest">Ahmed Mohamed</h3>
+                            <p class="text-customgreenDark-900 mb-3 mt-2">Marketing Director</p>
+                            <p class="text-gray-600 text-sm">10 years of experience in digital marketing</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out hover:-translate-y-2 group">
+                    <div
+                        class="image_item rounded-2xl rounded-b-none bg-gradient-to-br from-blue-400 to-purple-400 h-72 relative">
+                        <img src="Images/img_men_2.jfif" alt="" srcset=""
+                            class="h-72 w-full rounded-2xl rounded-b-none">
+
+                        <div
+                            class="absolute inset-0 bg-purple-600/60 flex items-center justify-center gap-4
+                                opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-2xl rounded-b-none">
+                            <a href="#"
+                                class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-purple-600 hover:bg-purple-100 group/icon">
+                                <i
+                                    class="fa-brands fa-facebook-f transition-transform duration-500 ease-in-out group-hover/icon:rotate-[360deg]"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-purple-600 hover:bg-purple-100 group/icon">
+                                <i
+                                    class="fa-brands fa-twitter transition-transform duration-500 ease-in-out group-hover/icon:rotate-[360deg]"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-purple-600 hover:bg-purple-100 group/icon">
+                                <i
+                                    class="fa-brands fa-linkedin-in transition-transform duration-500 ease-in-out group-hover/icon:rotate-[360deg]"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold transition-all duration-500 group-hover:tracking-widest">Mohamed Nader</h3>
+                            <p class="text-purple-600 mb-3 mt-2">SEO Specialist</p>
+                            <p class="text-gray-600 text-sm">Specialized in search engine optimization</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 duration-300 ease-in-out hover:-translate-y-2 group">
+                    <div
+                        class="image_item rounded-2xl rounded-b-none bg-gradient-to-br from-blue-400 to-purple-400 h-72 relative">
+                        <img src="Images/img_men_3.jfif" alt="" srcset=""
+                            class="h-72 w-full rounded-2xl rounded-b-none">
+
+                        <div
+                            class="absolute inset-0 bg-green-600/60 flex items-center justify-center gap-4
+                                opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-2xl rounded-b-none">
+                            <a href="#"
+                                class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-green-600 hover:bg-green-100 group/icon">
+                                <i
+                                    class="fa-brands fa-facebook-f transition-transform duration-500 ease-in-out group-hover/icon:rotate-[360deg]"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-green-600 hover:bg-green-100 group/icon">
+                                <i
+                                    class="fa-brands fa-twitter transition-transform duration-500 ease-in-out group-hover/icon:rotate-[360deg]"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-green-600 hover:bg-green-100 group/icon">
+                                <i
+                                    class="fa-brands fa-linkedin-in transition-transform duration-500 ease-in-out group-hover/icon:rotate-[360deg]"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold transition-all duration-500 group-hover:tracking-widest">Hany Magdy</h3>
+                            <p class="text-green-600 mb-3 mt-2">Web Developer</p>
+                            <p class="text-gray-600 text-sm">Expert in web development</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 duration-300 ease-in-out hover:-translate-y-2 group">
+                    <div
+                        class="image_item rounded-2xl rounded-b-none bg-gradient-to-br from-blue-400 to-purple-400 h-72 relative">
+                        <img src="Images/img_men_4.jfif" alt="" srcset=""
+                            class="h-72 w-full rounded-2xl rounded-b-none">
+
+                        <div
+                            class="absolute inset-0 bg-yellow-600/60 flex items-center justify-center gap-4
+                                opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-2xl rounded-b-none">
+                            <a href="#"
+                                class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-yellow-600 hover:bg-yellow-100 group/icon">
+                                <i
+                                    class="fa-brands fa-facebook-f transition-transform duration-500 ease-in-out group-hover/icon:rotate-[360deg]"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-yellow-600 hover:bg-yellow-100 group/icon">
+                                <i
+                                    class="fa-brands fa-twitter transition-transform duration-500 ease-in-out group-hover/icon:rotate-[360deg]"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-yellow-600 hover:bg-yellow-100 group/icon">
+                                <i
+                                    class="fa-brands fa-linkedin-in transition-transform duration-500 ease-in-out group-hover/icon:rotate-[360deg]"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold transition-all duration-500 group-hover:tracking-widest">Syraag ElDeen</h3>
+                            <p class="text-yellow-600 mb-3 mt-2">Graphic Designer</p>
+                            <p class="text-gray-600 text-sm">Specialized in visual identity design</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Team -->
+
+    <!-- Start Footer -->
+    <footer class="bg-customBgFooter-900 text-white">
+        <div class="container mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+                <div class="bg-customBgFooterForm-500 p-8 rounded-3xl">
+                    <h3 class="text-2xl font-bold mb-6">Contact Us</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <input type="text" placeholder="Full Name" class="w-full p-4 bg-customBgInpColr-500 border border-gray-600 
+                                         rounded-lg text-white
+                                          placeholder-gray-400
+                                          focus:ring-2 focus:ring-customgreenHoverLink-300 focus:outline-none
+                                          transition">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Email Address" class="w-full p-4 bg-customBgInpColr-500 border border-gray-600 
+                            rounded-lg text-white
+                                          placeholder-gray-400
+                                          focus:ring-2 focus:ring-customgreenHoverLink-300 focus:outline-none
+                                          transition">
+                        </div>
+                        <div>
+                            <textarea rows="5" placeholder="Your message..." class="w-full p-4 bg-customBgInpColr-500 border border-gray-600 
+                            rounded-lg text-white
+                                             placeholder-gray-400
+                                             focus:ring-2 focus:ring-customgreenHoverLink-300 focus:outline-none
+                                             transition"></textarea>
+                        </div>
+                        <button class="radial-in flex justify-center border border-gray-200 text-white px-4 py-3 block mx-auto  
+            rounded-lg hover:bg-customgreenDark-900 transition-all duration-300 shadow-md hover:shadow-xl font-medium">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info & Map -->
+                <div class="space-y-8">
+                    <h3 class="text-2xl font-bold">Contact Information</h3>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-customgreenDark-900 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-customgreenHoverLink-300 text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm">Address</p>
+                                <p class="font-medium">Cairo, Egypt</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-customgreenDark-900 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-phone text-customgreenHoverLink-300 text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm">Phone</p>
+                                <p class="font-medium">+20 123 456 7890</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-customgreenDark-900 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-envelope text-customgreenHoverLink-300 text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm">Email</p>
+                                <p class="font-medium">info@digitalpro.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="h-52 bg-gray-800 rounded-2xl overflow-hidden">
+                     
+                        <iframe src="https://www.google.com/maps?q=Cairo,Egypt&output=embed" class="w-full h-80 rounded-2xl border-0"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="border-t border-gray-800">
+            <div class="container mx-auto px-4 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <div class="text-gray-400 text-sm">
+                        © 2024 DigitalPro.
+                        <i class="fa-solid fa-seedling text-green-900 text-2xl"></i>
+                        All rights reserved.
+                        
+                    </div>
+                    <div class="flex gap-6">
+                        <a href="#" class="w-10 h-10 flex justify-center items-center rounded-xl text-gray-100 transition 
+                        bg-customBgInpColr-500 hover:text-customgreenDark-900 hover:bg-customgreenHoverLink-300">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                       <a href="#" class="w-10 h-10 flex justify-center items-center rounded-xl text-gray-100 transition 
+                        bg-customBgInpColr-500 hover:text-customgreenDark-900 hover:bg-customgreenHoverLink-300">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex justify-center items-center rounded-xl text-gray-100 transition 
+                        bg-customBgInpColr-500 hover:text-customgreenDark-900 hover:bg-customgreenHoverLink-300">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex justify-center items-center rounded-xl text-gray-100 transition 
+                        bg-customBgInpColr-500 hover:text-customgreenDark-900 hover:bg-customgreenHoverLink-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+
+
+</body>
+
+</html>
